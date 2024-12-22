@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Introduction to JS: Conditionals</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" class="link">Concept</a></li>
+                <li class="nav-item"><a href="./assignment.html" class="link">Assignment</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        
+        <section class="concept">
+            <h2 class="title">Concept: Conditionals</h2>
+            <p class="paragraph">If you remember the assignment on Data Types, the Boolean data type can hold one of two values: true or false. We will use this data type often because conditionals are statements that allow you to execute different blocks of code based on whether a specified condition is true or false. They are the building blocks of decision-making logic in your programs.
+            </p>
+
+            <h3 class="sub-title">If Statements</h3>
+            <p class="paragraph">The most basic conditional statement that you can have is the if statement. If a condition is true, run a specific set of instructions. Here is an example:</p>
+
+            <!-- CODE BLOCK FOR CREATING LISTS -->
+<code class="block-code">let danIsADog = false;
+
+if (danIsADog === true) {
+    console.log("WOOF");
+}
+</code>
+
+            <p class="paragraph">As you can see above, if I was a dog, the console would log “WOOF.” Since I am clearly not a dog, the console does not log “WOOF.” What if I wanted to log to the console “I am a human” when the condition is evaluated? If we log to the console “Dan is a human” at the end of the script, it would always print “Dan is a human” despite the actual value of <code class="inline-code">danIsADog</code>. We can solve this by adding an else statement to the if block.
+            </p>
+
+            <h3 class="sub-title">If/Else Statements</h3>
+            <p class="paragraph">
+                We can think of If/Else statements as, “if this value is true, then do this. Otherwise, do that.” Let’s continue with this dog example!
+            </p>
+
+<code class="block-code">let danIsADog = false;
+
+if (danIsADog === true) {
+    console.log("WOOF");
+} else {
+    console.log("Dan is a human.");
+}
+</code>
+
+
+            
+            <p class="paragraph">There! Now we have confirmation that I am not a dog by logging it to the console in the else block.
+            </p>
+
+            <h3 class="sub-title">If/Else If/Else</h3>
+            <p class="paragraph">
+                Moving away from the question of my humanity, what if we wanted to have multiple conditions to check for? Here's a quick example:
+            </p>
+
+<code class="block-code">let healthPoints = 5;
+
+if (healthPoints >= 10) {
+    console.log("Hero is healthy.");
+} else if (healthPoints < 10 && healthPoints >= 5) {
+    console.log("Hero is slightly damaged.");
+} else {
+    console.log("Hero is close to death.");
+}
+</code>
+            
+            <p class="paragraph">
+                It is highly recommended to read through the <a class="text-link" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals">MDN documentation on Conditionals.</a> and more about <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" class="text-link">if/else</a> before continuing.
+            </p>
+
+            
+            <h3 class="sub-title">Experiment Time</h3>
+            
+            <p class="paragraph">Open <code class="inline-code">index.js</code> and try the following:</p>
+            
+            <ul class="list">
+                <li class="list-item">Copy the last code block into your script and change the hero's health points to see what logic gets executed.</li>
+                <li class="list-item">Create a couple if statements that are meaningful.</li>
+                <li class="list-item">Create a couple if/else statements that are meaningful.</li>
+                <li class="list-item">Create a couple if/else if/else statements that are meaningful.</li>
+            </ul>
+
+            <p class="paragraph">Once you are done experimenting, comment out your code.</p>
+        </section>
+
+        
+    </main>
+
+    <footer>
+    </footer>
+
+    <!-- include the script at the end of the body -->
+    <script src="./js/index.js"></script>
+</body>
+</html>

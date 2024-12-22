@@ -1,0 +1,150 @@
+@import url("./reset.css");
+
+:root {
+    /** Dark theme primary colors */
+    --clr-primary-a0: #6553ee;
+    --clr-primary-a10: #7b65f1;
+    --clr-primary-a20: #8f77f3;
+    --clr-primary-a30: #a18af5;
+    --clr-primary-a40: #b29df8;
+    --clr-primary-a50: #c2b0fa;
+
+    /** Dark theme surface colors */
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+    --clr-surface-a30: #575757;
+    --clr-surface-a40: #717171;
+    --clr-surface-a50: #8b8b8b;
+
+    /** Dark theme tonal surface colors */
+    --clr-surface-tonal-a0: #1c1925;
+    --clr-surface-tonal-a10: #312e39;
+    --clr-surface-tonal-a20: #47444f;
+    --clr-surface-tonal-a30: #5f5c66;
+    --clr-surface-tonal-a40: #78757e;
+    --clr-surface-tonal-a50: #918f96;
+    --clr-text: #fff;
+}
+
+body {
+    background-color: var(--clr-surface-tonal-a0);
+    color: var(--clr-text);
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    max-width: 1200px;
+}
+
+code {
+    background-color: var(--clr-surface-a30);
+}
+
+.header {
+    background-color: var(--clr-primary-a0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    margin: 1rem;
+}
+
+.intro-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title {
+    padding: 0 1rem;
+}
+
+.paragraph {
+    padding: 0.5rem 1rem;
+}
+
+.block-code {
+    display: block;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin: 0 1rem;
+}
+
+.inline-code {
+    padding: 0.125rem 0.25rem;
+}
+
+.list-item {
+    margin: 0 2rem;
+}
+
+.list {
+    list-style: square;
+    margin: 0 0 0.5rem 1rem;
+}
+
+.concept {
+    display: flex;
+    flex-direction: column;
+}
+
+#submission-btn {
+    margin-top: 5rem;
+    background-color: var(--clr-primary-a0);
+    color: var(--clr-text);
+    padding: 0.5rem 1rem;
+    max-width: fit-content;
+    align-self: center;
+}
+
+#submission-btn:hover{
+    background-color: var(--clr-primary-a30);
+}
+
+#submission-btn:active {
+    background-color: var(--clr-primary-a50);
+    color: var(--clr-surface-a0);
+}
+
+.text-link {
+    text-decoration: underline;
+}
+
+.input {
+    background-color: white;
+    width: 150px;
+    align-self: center;
+    text-align: center;
+}
+
+.label {
+    margin-top: .5rem;
+    align-self: center; 
+}
+
+.self-center {
+    align-self: center;
+}
